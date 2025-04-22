@@ -1,4 +1,10 @@
-.App {
+/* styles.css */
+
+body {
   font-family: sans-serif;
+  color: black;
+}
+
+.App {
   text-align: center;
 }

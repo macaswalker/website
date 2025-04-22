@@ -35,36 +35,6 @@ const Home = () => {
     return () => window.removeEventListener("wheel", handleWheel);
   }, [canScroll, scrollPosition]);
 
-  useEffect(() => {
-    const homeButton = document.createElement("button");
-    homeButton.innerText = "Replay Animation";
-    Object.assign(homeButton.style, {
-      position: "fixed",
-      bottom: "20px",
-      right: "20px",
-      padding: "10px 20px",
-      backgroundColor: "black",
-      color: "white",
-      border: "none",
-      borderRadius: "5px",
-      cursor: "pointer",
-      display: canScroll ? "block" : "none",
-      zIndex: "1000",
-    });
-
-    homeButton.onclick = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      setTimeout(() => {
-        setCanScroll(false);
-        setScrollPosition(0);
-      }, 500);
-    };
-
-    document.body.appendChild(homeButton);
-    return () => {
-      document.body.removeChild(homeButton);
-    };
-  }, [canScroll]);
 
   const curveProgress = Math.min(scrollPosition / 500, 1);
   const quoteSize = Math.max(1.0 - curveProgress * 0.7, 0.3);
@@ -151,7 +121,7 @@ const Home = () => {
               </p>
             </div>
             <div className="border border-black p-6">
-              <h3 className="text-xl font-semibold mb-4 text-black">Research Interests</h3>
+              <h3 className="text-xl font-semibold mb-4 text-black">Interests</h3>
               <ul className="space-y-2 text-black">
                 <li className="flex items-center"><span className="mr-2">•</span>UK Policy</li>
                 <li className="flex items-center"><span className="mr-2">•</span>AI for Biology</li>
@@ -163,7 +133,7 @@ const Home = () => {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-black">Recent Publications</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-black">Recent Posts</h2>
           <div className="space-y-6">
             <div className="p-6 bg-white border border-black">
               <h3 className="text-xl font-semibold text-black">
@@ -199,17 +169,12 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-black">Contact</h2>
           <div className="bg-white p-6 border border-black">
             <p className="text-lg text-black mb-4">
-              I welcome collaboration opportunities and academic inquiries. Please feel free to reach out using the information below.
+              I always like to here from people with similar interests! 
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <h3 className="text-lg font-semibold text-black">Email</h3>
-                <p className="text-black underline">contact@academicname.edu</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-black">Office</h3>
-                <p className="text-black">Department of Historical Studies</p>
-                <p className="text-black">University Name</p>
+                <p className="text-black underline">macskyewalker[at]gmail.com</p>
               </div>
             </div>
           </div>
@@ -220,14 +185,12 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <p className="text-lg font-semibold">MPhil Biotechnology Student</p>
+              <p className="text-lg font-semibold">Mac Walker</p>
               <p className="text-sm text-gray-400">© {new Date().getFullYear()} All Rights Reserved</p>
             </div>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Twitter</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Google Scholar</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">GitHub</a>
+              <a href="https://www.linkedin.com/in/macwalker1/" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+              <a href="https://github.com/macaswalker" className="text-gray-400 hover:text-white transition-colors">GitHub</a>
             </div>
           </div>
         </div>

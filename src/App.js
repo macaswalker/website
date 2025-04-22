@@ -8,6 +8,9 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Portfolio from "./pages/Portfolio";
+import Music from "./pages/Music";
+
+
 
 export default function App() {
   return (
@@ -19,6 +22,7 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/music" element={<Music />} />
       </Routes>
     </Router>
   );
