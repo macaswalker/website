@@ -14,11 +14,11 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-2">Now</h2>
           <p className="text-lg leading-relaxed">
           I’m currently pursuing an MPhil in Biotechnology at the University of Cambridge, focusing on the intersection of AI and biology. Specifically, I am looking at single-cell foundation models
-          and using them for drug discovery. Whilst I have been here, I have been finally involving myself in AI safety, having spent the last few years
+          and using them for drug discovery. In Cambridge, I have been finally involving myself in AI safety, having spent the last few years
           <i> lurking</i> in this space. Through this, I was involved in MARS 2.0, the second edition of the MARS research program.
           I was incredibly lucky to research with a great team, where we investigated using 
           {" "}<a href="https://arxiv.org/pdf/2410.04332" className="underline text-blue-600 hover:text-blue-800">Gradient Routing</a>{" "} 
-          for circuit transplantation in transformer models. On top of this, I am a part of the AI Safety Committee here in Cambridge.
+          for circuit transplantation in transformer models. On top of this, I am a committee member of the Cambridge AI Safety Hub (CAISH).
           I am also currently a baby VC fellow.
           </p>
         </div>
@@ -28,7 +28,7 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-2">Before</h2>
           <p className="text-lg leading-relaxed">
             I previously completed my BSc in Mathematics at the University of Edinburgh. My dissertation focused on convolutional Gaussian Processes,
-            which are a beautiful method for utilising Gaussian Processes in image understanding. During my time in Edinburgh, I interned at 
+            which are a beautiful method for using Gaussian Processes for images (or even <i> any</i> graph-structured data). During my time in Edinburgh, I interned at 
             {" "}<a href="https://opteran.com/" className="underline text-blue-600 hover:text-blue-800">Opteran</a>{" "} 
             as research engineer, and 
             {" "}<a href="https://www.woodmac.com/" className="underline text-blue-600 hover:text-blue-800">Wood Mackenzie</a>{" "} 
@@ -60,7 +60,20 @@ export default function About() {
         </ul>
       </section>
 
-      {/* 3. Music */}
+      <hr></hr>
+
+      {/* 3. Bookshelf */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Bookshelf</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li>ADD CURRENTLY READING HERE</li>
+          <li>MPhil in Biotechnology @ Cambridge - dissertation on single-cell foundation models for drug discovery</li>
+          <li>Interests: Machine Learning, AI ∨ Biology, UK Governance and Policy, AI Safety, Geopolitics</li>
+          <li>Life Enjoyer</li>
+        </ul>
+      </section>
+
+      {/* 4. Music */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Music</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-4">
@@ -82,7 +95,7 @@ export default function About() {
         </Link>
       </section>
 
-      {/* 4. Films / Media */}
+      {/* 5. Films / Media */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Top 10 Films & TV</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
@@ -101,7 +114,7 @@ export default function About() {
         </ul>
       </section>
 
-      {/* 5. Mimetic Short-Form Video Links */}
+      {/* 6. Mimetic Short-Form Video Links */}
       <section>
         <h2 className="text-2xl font-semibold mb-4">Short-Form Video Content</h2>
         <p className="mb-4 text-lg">
