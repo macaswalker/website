@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { getRecentPosts } from "../data/blog/index";
 
 const Home = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -135,32 +137,32 @@ const Home = () => {
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-black">Recent Posts</h2>
           <div className="space-y-6">
-            <div className="p-6 bg-white border border-black">
-              <h3 className="text-xl font-semibold text-black">
-                Applications of Machine Learning in Protein Folding Prediction
-              </h3>
-              <p className="text-sm text-black mt-1">Journal of Computational Biology, 2024</p>
-              <p className="mt-3 text-black">
-                An examination of how novel machine learning techniques can improve the accuracy of protein structure prediction, with implications for drug discovery and biochemical research.
-              </p>
-            </div>
-            <div className="p-6 bg-white border border-black">
-              <h3 className="text-xl font-semibold text-black">
-                Securing AI Systems in Healthcare: Challenges and Opportunities
-              </h3>
-              <p className="text-sm text-black mt-1">AI & Society, 2023</p>
-              <p className="mt-3 text-black">
-                A comprehensive analysis of security vulnerabilities in healthcare AI systems and proposed frameworks for improving robustness without compromising performance.
-              </p>
-            </div>
-            <div className="p-6 bg-white border border-black">
-              <h3 className="text-xl font-semibold text-black">
-                The Impact of Algorithmic Decision-Making on UK Policy Development
-              </h3>
-              <p className="text-sm text-black mt-1">Policy & Internet, 2023</p>
-              <p className="mt-3 text-black">
-                A critical evaluation of how machine learning algorithms are increasingly influencing policy decisions in the UK, with recommendations for governance and transparency.
-              </p>
+            {getRecentPosts().map((post) => (
+              <div key={post.id} className="p-6 bg-white border border-black">
+                <Link to={`/blog/${post.id}`}>
+                  <h3 className="text-xl font-semibold text-black hover:underline">
+                    {post.title}
+                  </h3>
+                </Link>
+                <p className="text-sm text-black mt-1">{post.publication}</p>
+                <p className="mt-3 text-black">{post.summary}</p>
+                <div className="mt-4">
+                  <Link 
+                    to={`/blog/${post.id}`}
+                    className="text-black hover:underline"
+                  >
+                    Read More →
+                  </Link>
+                </div>
+              </div>
+            ))}
+            <div className="flex justify-end mt-4">
+              <Link 
+                to="/blog"
+                className="inline-block px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition-colors"
+              >
+                View All Posts
+              </Link>
             </div>
           </div>
         </section>
