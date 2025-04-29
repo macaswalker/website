@@ -8,7 +8,7 @@ const post = {
     content: `
 
 
- How do systems maintain behaviour in the face of environmental change?  
+   How do systems maintain behaviour in the face of environmental change?  
   ## AlphaFold and Beyond
   DeepMind's AlphaFold has demonstrated remarkable accuracy in predicting protein structures, achieving results comparable to experimental methods. Building upon this foundation, researchers are now exploring how to extend these capabilities.
   
