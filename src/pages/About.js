@@ -44,7 +44,7 @@ export default function About() {
           <p className="text-lg leading-relaxed">
             I grew up in Sheffield, a city in the North of England (also the best city in the world). As a teen, I went on 
             {" "}<a href="https://wiki.apterous.org/Mac_Walker" className="underline text-blue-600 hover:text-blue-800">Countdown</a>{" "}
-            and won 4 games, finishing 9th in Series 78 (and hence, <i> just </i> missing out on attending that years grand final).
+            and won 4 games, finishing 9th in Series 78.
           </p>
         </div>
       </section>

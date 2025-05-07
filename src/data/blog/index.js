@@ -3,13 +3,15 @@ import proteinFolding from './antithetic-integral-feedback';
 import aiHealthcare from './ai-systems-healthcare.js';
 import automationState from './automation-state-capacity.js';
 import interactiveMlPost from './interactive-ml-post.js';
+import potatoProblem from './potato-problem.js';
 
 // Array of all blog posts
 const allPosts = [
   interactiveMlPost,  // Our new interactive post
   proteinFolding,
   aiHealthcare,
-  automationState
+  automationState,
+  potatoProblem
 ];
 
 // Sort posts by date (newest first)
