@@ -9,19 +9,19 @@ export default function Music() {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {albums.map((album, index) => (
-          <div
+          <a
             key={index}
-            className="relative group overflow-hidden rounded shadow-lg"
+            href={album.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded overflow-hidden shadow-lg transition transform hover:scale-105"
           >
             <img
               src={album.img}
-              alt={album.title}
-              className="w-full aspect-square object-cover group-hover:opacity-30 transition duration-300"
+              alt={`${album.title} by ${album.artist}`}
+              className="w-full aspect-square object-cover"
             />
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white bg-opacity-90 p-4 text-sm text-center">
-              <p>{album.reaction}</p>
-            </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

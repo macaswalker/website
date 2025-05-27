@@ -129,6 +129,7 @@ const Home = () => {
                 <li className="flex items-center"><span className="mr-2">•</span>AI for Biology</li>
                 <li className="flex items-center"><span className="mr-2">•</span>AI Security</li>
                 <li className="flex items-center"><span className="mr-2">•</span>Technology & Institutions</li>
+                <li className="flex items-center"><span className="mr-2">•</span>Mathematics & Modelling</li>
               </ul>
             </div>
           </div>

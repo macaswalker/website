@@ -49,70 +49,44 @@ export default function About() {
         </div>
       </section>
 
-      {/* 2. Quick Facts */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Quick Facts</h2>
-        <ul className="list-disc list-inside space-y-2 text-lg">
-          <li>BSc @ Edinburgh — dissertation on convolutional Gaussian processes</li>
-          <li>MPhil in Biotechnology @ Cambridge - dissertation on single-cell foundation models for drug discovery</li>
-          <li>Interests: Machine Learning, AI ∨ Biology, UK Governance and Policy, AI Safety, Geopolitics</li>
-          <li>Life Enjoyer</li>
-        </ul>
-      </section>
 
       <hr></hr>
 
-      {/* 3. Bookshelf */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Bookshelf</h2>
-        <ul className="list-disc list-inside space-y-2 text-lg">
-          <li>ADD CURRENTLY READING HERE</li>
-          <li>MPhil in Biotechnology @ Cambridge - dissertation on single-cell foundation models for drug discovery</li>
-          <li>Interests: Machine Learning, AI ∨ Biology, UK Governance and Policy, AI Safety, Geopolitics</li>
-          <li>Life Enjoyer</li>
-        </ul>
-      </section>
+    {/* 3. Music */}
+    <section className="mb-12">
+      <h2 className="text-2xl font-semibold mb-4">Music</h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-4">
+        {albums.slice(-4).map((album, index) => (
+          <a
+            key={index}
+            href={album.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={album.reaction} // optional: tooltip
+            className="block rounded overflow-hidden shadow-lg transition transform hover:scale-105"
+          >
+            <img
+              src={album.img}
+              alt={`${album.title} by ${album.artist}`}
+              className="w-full aspect-square object-cover"
+            />
+          </a>
+        ))}
+      </div>
+      <Link to="/music" className="text-sm text-blue-600 hover:underline">
+        See all →
+      </Link>
+    </section>
 
-      {/* 4. Music */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Music</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-4">
-          {albums.slice(0, 4).map((album, index) => (
-            <div key={index} className="relative group overflow-hidden rounded shadow-lg">
-              <img
-                src={album.img}
-                alt={album.title}
-                className="w-full group-hover:opacity-30 transition duration-300"
-              />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white bg-opacity-90 p-4 text-sm text-center">
-                <p>{album.reaction}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <Link to="/music" className="text-sm text-blue-600 hover:underline">
-          See all →
-        </Link>
-      </section>
 
-      {/* 5. Films / Media */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Top 10 Films & TV</h2>
-        <ul className="list-disc list-inside space-y-2 text-lg">
-          <li><strong>Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb</strong> (1964)</li>
-          <li><strong>Everything Everywhere All at Once</strong> (2022)</li>
-          <li><strong>Dazed and Confused</strong> (1993)</li>
-          <li><strong>They Live</strong> (1988)</li>
-          <li><strong>Total Recall</strong> (1990)</li>
-
-  
-          <li><strong>Heroes (S1) </strong> (2006)</li>
-          <li><strong>The Thick of It</strong> (2005-2012)</li>
-          <li><strong>Beef</strong> (2023)</li>
-          <li><strong>Utopia (S1) </strong> (2013)</li>
-          <li><strong>The Office (UK) </strong> (2001-2003)</li>
-        </ul>
-      </section>
+    {/* 5. Quotes */}
+    <section className="mb-12">
+      <h2 className="text-2xl font-semibold mb-4">Quotes</h2>
+      <ul className="list-disc list-inside space-y-4 text-lg italic">
+        <li>“We’re an empire now, and when we act, we create our own reality. And while you’re studying that reality — judiciously, as you will — we’ll act again, creating other new realities, which you can study too, and that’s how things will sort out. We’re history’s actors . . . and you, all of you, will be left to just study what we do.” - Karl Rove, 2004 </li>
+        <li>"There must be another room, somewhere down the hall, where the real meeting is happening, where the real experts are, making the real decisions ... because it can’t just be us. It can’t just be this.” - Jake Sullivan, 2013</li>
+      </ul>
+    </section>
 
       {/* 6. Mimetic Short-Form Video Links */}
       <section>
