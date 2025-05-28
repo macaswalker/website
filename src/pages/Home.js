@@ -67,7 +67,7 @@ const Home = () => {
               d={`
                 M 100,400
                 ${Array.from(
-                  { length: Math.min(100, Math.floor(100 * curveProgress)) },
+                  { length: Math.min(100, Math.floor(150 * curveProgress)) },
                   (_, i) => {
                     const x = 100 + i * 8;
                     const mathX = -30 + (i / 100) * 33.75;

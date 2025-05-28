@@ -114,22 +114,68 @@ const albums = [
      link: "https://www.youtube.com/watch?v=NFhJRTdmviA&list=PLbOGt8cOph4UNFsqheclqn_76TUMUjpmm&index=6" //
     },
     {
-      title: "A LA SALA",
-      artist: "Khruangbin",
-      img: "/albums/a-la-sala-khruangbin.jpg",
-      reaction: "",
-      year: 2024,
-      link: "https://www.youtube.com/watch?v=upo8_2NdmRI&list=PL6-B652C0OuIuh2rf9BClnE3WP6fRou3w&index=2"//
-    },
-    {
     title: "Soul Mining",
     artist: "The The",
     img: "/albums/soul-mining-the-the.jpg",
     reaction: "",
     year: 1983,
     link: "https://www.youtube.com/watch?v=7ZYgKCbFbWY&list=PLfGibfZATlGrw5NqvPwid9MnpglSuZCzH&index=2"//
-
-
+    },
+    {
+    title: "More Life",
+    artist: "Drake",
+    img: "/albums/more-life-drake.jpg",
+    reaction: "Summer 2017",
+    year: 2017,
+    link: "https://www.youtube.com/watch?v=CzmiPn1BJms&list=PLbUIPZJL6vw-7ef4PuuPJhaK3K-0UxRKO&index=5"//
+    },
+    {
+      title: "Sunshine on Leith",
+      artist: "The Proclaimers",
+      img: "/albums/sunshine-on-leith-the-proclaimers.jpg",
+      reaction: "Edinburgh 20-24 - secretly very beautiful album",
+      year: 1988,
+      link: "https://www.youtube.com/watch?v=sZ43B71vK0g&list=PLNPGM2D7aODevPpr-WByWhWc-qjoRSd-T&index=6" //
+    },
+    {
+    title: "Blonde",
+    artist: "Frank Ocean",
+    img: "/albums/blonde-frank-ocean.jpg",
+    reaction: "",
+    year: 2016,
+    link: "https://www.youtube.com/watch?v=r4l9bFqgMaQ&list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd&index=9" //
+    },
+    {
+      title: "A Carnival of Fears",
+      artist: "Yellow House",
+      img: "/albums/a-carnival-of-fears-yellow-house.jpg",
+      reaction: "",
+      year: 2017,
+      link: "https://www.youtube.com/watch?v=qK9Afg-aks4&list=PLsBewTkIwdI1hp2jCTz_0DQ9KPRSwsbcv" //
+    },
+    {
+      title: "Fresh Air",
+      artist: "HOMESHAKE",
+      img: "/albums/fresh-air-homeshake.jpg",
+      reaction: "every single thing",
+      year: 2017,
+      link: "https://www.youtube.com/watch?v=0aOzT11GMKM&list=PLZqsyBiYZFQ0tH7RCNRm6DrKRa9DrCU-f&index=4"//
+    },
+    {
+      title: "Atlanta Millionaire's Club",
+      artist: "Faye Webster",
+      img: "/albums/atlanta-millionaires-club-faye-webster.jpg",
+      reaction: "the day that I met you",
+      year: 2019,
+      link: "https://www.youtube.com/watch?v=TTReFZIAnpU&list=PL-YMUXzPXsLDXBai9Q9cOXc75DYdJmFyk&index=6"//
+    },
+    {
+      title: "A LA SALA",
+      artist: "Khruangbin",
+      img: "/albums/a-la-sala-khruangbin.jpg",
+      reaction: "",
+      year: 2024,
+      link: "https://www.youtube.com/watch?v=upo8_2NdmRI&list=PL6-B652C0OuIuh2rf9BClnE3WP6fRou3w&index=2"//
     }
   ];
   
