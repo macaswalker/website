@@ -20,44 +20,6 @@ export default function About() {
           </p>
         </div>
 
-        {/* Quick Links */}
-        <div className="mb-6">
-          <h2 className="text-2xl font-semibold mb-2">Links</h2>
-          <ul className="text-lg space-y-2">
-            <li>
-              <a
-                href="/cv/CV_MacWalker_May.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-              CV
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/macskyewalker"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-              LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/macaswalker"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-              GitHub
-              </a>
-            </li>
-          </ul>
-        </div>
-
-
         {/* Before */}
         <div className="mb-6">
           <h2 className="text-2xl font-semibold mb-2">Before</h2>
@@ -83,6 +45,43 @@ export default function About() {
           </p>
         </div>
       </section>
+
+        {/* Quick Links */}
+        <div className="mb-6">
+      <h2 className="text-2xl font-semibold mb-2">Links</h2>
+      <ul className="text-lg space-y-2">
+        <li>
+          <a
+            href="/cv/CV_MacWalker_May.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+          CV
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/macskyewalker"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+          LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/macaswalker"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+          GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
 
 
     {/* 3. Music */}
