@@ -14,7 +14,7 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-2">Now</h2>
           <p className="text-lg leading-relaxed">
           I’m currently pursuing an MPhil in Biotechnology at the University of Cambridge, focusing on the intersection of AI and biology. Specifically, I am looking at single-cell foundation models
-          and using them for drug discovery. I am part of MARS (Mentorship for Alignment Research Students).
+          and using them for drug discovery. I am part of MARS (Mentorship for Alignment Research Students)
           where we are investigating using Gradient Routing for circuit transplantation in transformer models. On top of this, I am a committee member of the Cambridge AI Safety Hub (CAISH).
           I am also currently a baby VC fellow.
           </p>
