@@ -172,7 +172,7 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-black">Contact</h2>
           <div className="bg-white p-6 border border-black">
             <p className="text-lg text-black mb-4">
-              I always like to here from people with similar interests! 
+              I always like to hear from people with similar interests! 
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
