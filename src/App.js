@@ -8,6 +8,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Portfolio from "./pages/Portfolio";
 import Music from "./pages/Music";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Import styles
 import "./styles.css";
@@ -18,6 +19,7 @@ import "./styles.css";
 function App() {
   return (
     <Router>
+          <ScrollToTop />
       <div className="font-sans min-h-screen bg-white text-black">
         <Navbar />
         <Routes>

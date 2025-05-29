@@ -37,6 +37,25 @@ const Home = () => {
     return () => window.removeEventListener("wheel", handleWheel);
   }, [canScroll, scrollPosition]);
 
+  useEffect(() => {
+    const handleTouchMove = (e) => {
+      if (!canScroll) {
+        setScrollPosition((pos) => {
+          const newPos = Math.min(pos + 10, 600); // tweak sensitivity if needed
+          if (newPos >= 600) {
+            setCanScroll(true);
+          }
+          return newPos;
+        });
+        e.preventDefault();
+      }
+    };
+  
+    window.addEventListener("touchmove", handleTouchMove, { passive: false });
+    return () => window.removeEventListener("touchmove", handleTouchMove);
+  }, [canScroll]);
+  
+
 
   const curveProgress = Math.min(scrollPosition / 500, 1);
   const quoteSize = Math.max(1.0 - curveProgress * 0.7, 0.3);

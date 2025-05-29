@@ -52,7 +52,7 @@ export default function About() {
       <ul className="text-lg space-y-2">
         <li>
           <a
-            href="/cv/CV_MacWalker_May.pdf"
+            href="./cv/CV_MacWalker_May.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
