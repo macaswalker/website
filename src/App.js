@@ -9,6 +9,8 @@ import BlogPost from "./pages/BlogPost";
 import Portfolio from "./pages/Portfolio";
 import Music from "./pages/Music";
 import ScrollToTop from "./components/ScrollToTop";
+import PortfolioPost from "./pages/PortfolioPost";
+
 
 // Import styles
 import "./styles.css";
@@ -29,6 +31,7 @@ function App() {
           <Route path="/blog/:postId" element={<BlogPost />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/portfolio/:postId" element={<PortfolioPost />} />
         </Routes>
       </div>
     </Router>
