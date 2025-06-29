@@ -176,6 +176,14 @@ const albums = [
       reaction: "",
       year: 2024,
       link: "https://www.youtube.com/watch?v=upo8_2NdmRI&list=PL6-B652C0OuIuh2rf9BClnE3WP6fRou3w&index=2"//
+    },
+    {
+      title: "Cry",
+      artist: "Cigarettes After Sex",
+      img: "/albums/cigarettes-after-sex-cry.jpg",
+      reaction: "",
+      year: 2024,
+      link: "https://www.youtube.com/watch?v=3XqqkrJENB4"//
     }
   ];
   

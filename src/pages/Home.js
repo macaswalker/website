@@ -135,7 +135,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="prose max-w-none">
               <p className="text-lg text-black">
-                Welcome to my personal website. I am currently pursuing an MPhil in Biotechnology at the University of Cambridge. Prior to this, I completed my Bachelor of Mathematics at the University of Edinburgh.
+                Hi, I'm Mac Walker, welcome to my personal website. I am currently pursuing an MPhil in Biotechnology at the University of Cambridge. Prior to this, I completed my Bachelor of Mathematics at the University of Edinburgh.
               </p>
               <p className="text-lg text-black mt-4">
                 I believe things are <em>about to get very weird</em> - I am interested in making that go as well as possible. Specifically, how can we make emerging technologies best benefit society?
