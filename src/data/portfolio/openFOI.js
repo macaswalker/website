@@ -1,38 +1,53 @@
 const post = {
-    id: "openFOI",
-    title: "OpenFOI: Freedom of Information Made Easy",
-    publication: "Portfolio, 2025",
-    date: "2025-05-28",
-    summary: "An AI-powered platform for managing Freedom of Information requests.",
-    video: "/videos/OpenFOI.mp4",
-    content: `
-  ## Overview
-  
-  Freedom of Information (FOI) requests are essential for public accountability, yet managing them is often inefficient and time-consuming. **OpenFOI** is a lightweight, AI-powered platform designed to streamline the FOI lifecycle — from drafting and redacting to exporting and tracking — helping journalists, civil society groups, and government bodies reduce overhead and improve transparency.
-  
-  ## Features
-  
-  - 🔍 AI-assisted draft generation for FOI responses  
-  - ✂️ Smart redaction using named entity recognition (NER)  
-  - 📄 One-click export to PDF and CSV formats  
-  - 📊 Analytics dashboard for tracking request timelines and response rates  
-  - 🧠 GPT-powered suggestions for common replies and flag detection  
-  
-  ## Technologies Used
-  
-  - **React** – frontend UI  
-  - **FastAPI** – backend API  
-  - **OpenAI (GPT-4)** – language generation  
-  - **PostgreSQL** – data storage  
-  - **spaCy** – for redaction and NER  
-  - **Git LFS** – for media versioning  
-  - **TailwindCSS** – for clean and responsive UI  
-  
-  ## Reflections
-  
-  OpenFOI was developed to explore how AI can reduce the administrative burden associated with public sector transparency. Building it deepened my understanding of language models in sensitive domains, full-stack system design, and user workflows in civic tech. It’s a compelling use case for AI in service of democratic accountability.
-  `
-  };
-  
-  export default post;
-  
+  id: "openFOI",
+  title: "OpenFOI: Freedom of Information Made Easy",
+  publication: "Portfolio, 2025",
+  date: "2025-05-28",
+  summary: "An AI-powered platform for managing Freedom of Information requests.",
+  video: "/videos/OpenFOI.mp4",
+  content: `
+
+## OpenFOI
+
+Freedom of Information (FOI) requests are a mainstay of British institutions.
+Freedom of Information (FOI) requests are vital for transparency and accountability — yet responding to them remains manually intensive and error-prone. OpenFOI is a streamlined, AI-powered tool for managing FOI workflows end-to-end. Built for journalists, public officials, and civil society organizations, it simplifies response drafting, redaction, export, and request tracking — all in a single interface.
+
+### Features
+
+- GPT-powered response drafting with integrated FOI exemptions  
+- Manual and rule-based redaction with exemption tagging  
+- Blackout-style redacted PDF + styled DOCX export  
+- CSV upload for batch request ingestion  
+- Request tracker with metadata, reference numbers, and response history  
+- Session-based state saving for seamless navigation  
+- Customisable exemptions system compliant with UK FOI Act 2000
+
+### Technologies Used
+
+- **Streamlit** – lightweight frontend for rapid UI development  
+- **Python** – core backend logic and redaction tools  
+- **OpenAI GPT-4** – for AI-assisted response generation and suggestions  
+- **spaCy** – optionally used for named entity recognition (NER)  
+- **FPDF + python-docx** – for redacted PDF and styled DOCX exports  
+- **Git LFS** – for storing large media assets (e.g. video walkthroughs)
+
+### Reflections
+
+Tony Blair announced that _one of his biggest regrests from government was pushing through the FOI Act (cite) - apparently it leads to a risk-averse culture in the civil service. 
+As someone who _believes the civil service should encourage risk taking and increase the risk tolerance of its civil servants (cite), maybe better work should go into trying to reverse the FOI Act instead of making it easier.
+As you may imagine, it is a relatively nebulous question as to how much FOI requests costs the central government each year. Estimates 
+from 2010 state that central government expends £24.4 million per year solely on FOI, with local governments  £11.1 million. (cite)
+
+OpenFOI was built to explore how small civic tools can harness AI responsibly in high-stakes, bureaucratic domains. Working on it strengthened my understanding of document workflows, sensitive redaction logic, and user-centric design in the public sector. It’s a simple, extensible base for bringing machine learning to government transparency.
+
+---
+
+### Footnotes
+Citation for FOI cost: https://www.ucl.ac.uk/constitution-unit/sites/constitution-unit/files/cost-of-foi.pdf 
+
+--- 
+
+`
+};
+
+export default post;
