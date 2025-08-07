@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
+import rehypeRaw from "rehype-raw";
 
 // Simple Counter component for use in blog posts
 const Counter = () => {
@@ -249,7 +250,7 @@ export default function BlogPost() {
         <div className="content prose prose-headings:font-bold prose-headings:text-black prose-p:text-black max-w-none">
           <ReactMarkdown
             remarkPlugins={[remarkMath]}
-            rehypePlugins={[rehypeKatex]}
+            rehypePlugins={[rehypeKatex, rehypeRaw]}
             components={{
               // Custom handler for code blocks
               code({node, inline, className, children, ...props}) {
